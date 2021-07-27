@@ -6,6 +6,6 @@ def myfunc():
   def myinnerfunc():
    #if(i == 5):    variable i it is not visible here
     print(x)
-  myinnerfunc()
+  return myinnerfunc()
 
 myfunc()
