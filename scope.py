@@ -1,5 +1,5 @@
 def myfunc():
-  x = 300
+  x = 300    #global
   y = 0
   for i in range(5):
     y = y + 1
