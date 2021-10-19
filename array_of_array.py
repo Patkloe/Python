@@ -1,4 +1,4 @@
-thislist = [[1,2,3],[4,5,6],[3,7,9],[0,2,2],[0,1,7]]   #build array/ list of list
+thislist = [[1,2,3],[4,5,6],[3,7,9],[0,2,2],[0,1,7]]
 for x in thislist:
  print(x)
 print("organisation")
@@ -11,5 +11,7 @@ taille = len(thislist)
 print(taille)
 print(thislist[5])
 print(thislist[5][2][0])
-thislist.remove([0,1,7]) # remove a specific sub list in the main list
+thislist.remove([0,1,7])
 print(thislist)
+le_type = type(thislist)
+print(le_type) # pour recuperer le type de la variable thislist
