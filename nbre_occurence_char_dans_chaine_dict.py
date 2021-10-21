@@ -1,3 +1,4 @@
+# version 000
 test = ['a','b','c','a','d','c']
 #nbre = test.count('a')
 #char = str(test)
@@ -34,3 +35,22 @@ def ecrire(x): # function to get the dictionnary, extract keys and values
  print(f) 
   
 ecrire(const(test))
+
+
+# version 0001
+def recup_char():
+ dic = {"a":1,"b":2, "c":3}
+ recup_key = list(dic.keys())
+ recup_val = list(dic.values())
+ index_sort = []
+ for i in range(len(recup_val)):
+  index_sort.append([recup_val[i],i])
+ index_sort.sort(reverse = True)
+ mot =""
+ for x in index_sort:
+  print(x[1])
+  while x[0] > 0:
+   mot = mot + recup_key[x[1]]
+   x[0] = x[0] - 1
+ return mot
+print(recup_char())
