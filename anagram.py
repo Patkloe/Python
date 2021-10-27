@@ -29,4 +29,18 @@ def isAnagram(str1, str2):
  vrai = True
  print(vrai)
 isAnagram("papa","paaf")
- 
+ # version 1.o
+    def verif_anagram():
+ dic = {"a":2,"b":3,"c":4}
+ tex = "aabbbccccc"
+ for i in range(len(tex)):
+  if tex[i] in dic:
+   if dic[tex[i]]:
+    dic[tex[i]] = dic[tex[i]] - 1
+   else:
+    return False
+  else:
+   return False
+ return True
+print(verif_anagram())
+
