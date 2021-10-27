@@ -35,7 +35,7 @@ isAnagram("papa","paaf")
  dic = {"a":2,"b":3,"c":4}
  tex = "aabbbccccc"
  for i in range(len(tex)):
-  if tex[i] in dic:
+  if tex[i] in dic: # "in" membership operator as  "not in"
    if dic[tex[i]]:
     dic[tex[i]] = dic[tex[i]] - 1
    else:
