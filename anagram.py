@@ -10,3 +10,23 @@ print(isAnagram("paypal1","palpy1"))
 val = "Decouvrir un travail"
 val_list = list(val)
 #print(str1_list)
+
+
+# a finir
+def isAnagram(str1, str2):
+ if len(str1)==len(str2):
+  dic = dict()
+  vrai = True
+  for i in range(len(str1)):
+   dic[str1[i]] = str1.count(str1[i])
+  for j in range(len(str2)):
+   if str2[j] in dic:
+    dic[str2[j]] = dic[str2[j]] - 1
+   else:
+    vrai = False
+    break
+   #vrai = False
+ vrai = True
+ print(vrai)
+isAnagram("papa","paaf")
+ 
