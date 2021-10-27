@@ -20,7 +20,7 @@ def isAnagram(str1, str2):
   for i in range(len(str1)):
    dic[str1[i]] = str1.count(str1[i])
   for j in range(len(str2)):
-   if str2[j] in dic:
+   if str2[j] in dic and dic[str2[j]]:  # in dic:
     dic[str2[j]] = dic[str2[j]] - 1
    else:
     vrai = False
