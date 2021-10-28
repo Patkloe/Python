@@ -45,3 +45,21 @@ isAnagram("papa","paaf")
  return True
 print(verif_anagram())
 
+good version
+
+def verif_anagram(a,tex):
+ #dic = {"a":2,"b":3,"c":4}
+ #tex = "aabbbcccc"
+ dic = dict()
+ for i in range(len(a)):
+  dic[a[i]] = a.count(a[i])
+ for i in range(len(tex)):
+  if tex[i] in dic: # "in" membership operator as  "not in"
+   if dic[tex[i]]:
+    dic[tex[i]] = dic[tex[i]] - 1
+   else:
+    return False
+  else:
+   return False
+ return True
+print(verif_anagram("paypal","palpay"))
