@@ -8,6 +8,7 @@ def verif_anagram(a1,a2):
    print(dic) # test pour voir le deroulement
    if dic[a2[j]] < 0: # si cette cle existe et est negative, on retourne Faux
     return False
- return False
+  else:
+   return False
  return True
 print(verif_anagram("paypal","palpay"))
