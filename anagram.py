@@ -1,4 +1,4 @@
-def verif_anagram(a1,a2):
+def isAnagram(a1,a2):
  dic = dict()
  for i in range(len(a1)):
   dic[a1[i]] = a1.count(a1[i])
@@ -11,4 +11,4 @@ def verif_anagram(a1,a2):
   else:
    return False
  return True
-print(verif_anagram("paypal","palpay"))
+print(isAnagram("paypal","palpay"))
