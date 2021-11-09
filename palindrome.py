@@ -6,3 +6,10 @@ def isPalindrome(s):
   return False
   
 print(isPalindrome("aba"))
+def isPalindrome(st):
+ if st == st[::-1]:
+  return True
+ return False
+ 
+ 
+print(isPalindrome("ratar"))
