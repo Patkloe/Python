@@ -1,23 +1,4 @@
-#version 001
-'''thislist = ["apple", "banana", "cherry"]
-n = len(thislist)
-l1 = thislist[0:int(n-1/2)]
-l2 = thislist[int(n-1/2)::n]
-print(thislist)
-print(l1)
-print(l2)'''
-# definir fonction Fusionner(l1,12)
-
-def trier(l):
- n = len(l)
- if n == 0 or n == 1 :
-  return l
- else:
-  l1 = trier(l[0:int(n-1)/2])
-  l2 = trier(l[int(n-1/2):n])
-  
-  # version 1
-  def mergeSort(myList):
+def mergeSort(myList):
     if len(myList) > 1:
         mid = len(myList) // 2
         left = myList[:mid]
@@ -62,7 +43,6 @@ def trier(l):
             k += 1
         #mergeSort(left)
         #mergeSort(right)
-
-myList = [54,26,93,17,77,31,44,55,20,5,4,3,2,1]
-mergeSort(myList)
-print(myList)
+        return myList
+tab = [54,26,93,17,77,31,44,55,20,5,4,3,2,1]
+print(mergeSort(tab))
