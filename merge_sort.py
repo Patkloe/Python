@@ -46,12 +46,14 @@ def mergeSort(myList):
         return myList
 tab = [54,26,93,17,77,31,44,55,20,5,4,3,2,1]
 print(mergeSort(tab))
-'''
-def mergesort(myList):
+
+    # version 1.0    short
+    
+    def mergesort(myList):
  if len(myList) > 1:
   mid = len(myList)//2
   left = myList[:mid]
-  right = myList[mid:2]
+  right = myList[mid:]
   mergesort(left)
   mergesort(right)
   i = 0 # left 
@@ -74,7 +76,7 @@ def mergesort(myList):
    j = j + 1
    k = k + 1
   return myList
-''' else:
-  return myList'''
-tab = [54,26,93,17,77,31,44,55,20,5,4,3,2,1]
-print(mergesort(tab))   '''
+ else:
+  return myList
+tab = [6,5,4,9,8,7,3,2,1,0]
+print(mergesort(tab))
