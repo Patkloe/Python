@@ -80,3 +80,5 @@ print(mergeSort(tab))
   return myList
 tab = [6,5,4,9,8,7,3,2,1,0]
 print(mergesort(tab))
+3 test a revoir
+
