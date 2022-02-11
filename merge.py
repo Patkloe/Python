@@ -22,3 +22,6 @@ def merge(l1,l2):
 tab1 = [2,3,5,6,7]
 tab2 = [1,9,6,8,4,0]
 print(merge(tab1,tab2))
+# a bosser
+
+
