@@ -6,3 +6,12 @@ def reverse(n):
   n //= 10             # n est reduit a la valeur entiere de la division par 10
  return result
  
+ # different method
+
+x = 987
+t = str(x)
+r = list(t)
+y = t[::-1]
+print(y)
+trans = int(y)
+print(trans)
