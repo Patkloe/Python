@@ -15,3 +15,10 @@ y = t[::-1]
 print(y)
 trans = int(y)
 print(trans)
+  # another version
+ return result
+print(reverse(1045))
+nbre = 1045
+conv = str(nbre)
+inv = conv[::-1]
+print(inv)
