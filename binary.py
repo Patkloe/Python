@@ -19,7 +19,7 @@ def binaire(n):
  return res[::-1]
  
 print(binaire(68))
-# to convert in decimal
+# to convert in decimal   ver : 1.0
 def decimal(n):
  p=1
  res = 0
@@ -30,4 +30,15 @@ def decimal(n):
  return res
  
 print(decimal("111"))
+
+# to convert decimal  ver : 1.1
+
+def decimal(n):
+ res = 0
+ rev = n[::-1]
+ for i in range(len(rev)) :
+   res = res + (2**i)*int(rev[i])
+ return res
+ 
+print(decimal("100"))
 
