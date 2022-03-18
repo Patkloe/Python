@@ -19,12 +19,15 @@ def binaire(n):
  return res[::-1]
  
 print(binaire(68))
-
-"""def decimal(n):
+# to convert in decimal
+def decimal(n):
+ p=1
  res = 0
- for i in range[len(str(n))]:
-  res = res + n[i]*2**int(n[i])
+ rev = n[::-1]
+ for i in rev :
+   res = res + p*int(i)
+   p = p*2
  return res
  
-print(decimal(100))"""
-  
+print(decimal("111"))
+
