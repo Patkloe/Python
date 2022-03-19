@@ -23,3 +23,13 @@ def language(**args):
         
 language(country="NL", code="+31")
  
+# sample
+def recup(*args):
+ res=[]
+ for i in range(len(args)):
+  for j in range(i+1,len(args)):
+   res.append([args[i],args[j]])
+ for x in res:
+  print(x[0],x[1],sep="-")
+ return res
+recup("test","essai","decouv","victoire")
