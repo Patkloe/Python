@@ -8,6 +8,6 @@ def majority():
    maj=dic[tab[i]]
    ind=i
  print(dic)
- return maj,i
+ return maj,i    # return a tuple
  
 print(majority())
