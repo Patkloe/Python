@@ -48,3 +48,18 @@ def recup(*args):
   print(taille1,taille2,sep="-")
  return res
 recup("test","essai","decouv","victoire")
+
+# another sample
+def recup(*args):
+ size=len(args)
+ recup_val=[]
+ for i in range(size):
+  for j in range(i+1,size):
+   recup_val.append([args[i],args[j]])
+ return recup_val
+ 
+print(recup('test','test1','test2','test3','test4'))
+
+tab=[1,1,3,4,5,6,7,8,1]
+nouv=set(tab)
+print(nouv)
