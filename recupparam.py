@@ -63,3 +63,22 @@ print(recup('test','test1','test2','test3','test4'))
 tab=[1,1,3,4,5,6,7,8,1]
 nouv=set(tab)
 print(nouv)
+
+#sample, navigate on the value retrieved in the array (args)
+def recup(*args):
+ size=len(args)
+ recup_val=[]
+ for i in range(size):
+  for j in range(i+1,size):
+   recup_val.append([args[i],args[j]])
+ for x in recup_val:
+  print(x[0][0])
+ print(len(recup_val))
+ return recup_val
+ 
+print(recup('test','test1','test2','test3','test4'))
+
+tab=[1,1,3,4,5,6,7,8,1]
+nouv=set(tab)
+print(nouv)
+
