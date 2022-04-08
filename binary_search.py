@@ -7,9 +7,9 @@ def rech(arr,x):
   if arr[mid]==x:
    return mid
   elif arr[mid]>x:
-   fin-=1
+   fin=mid-1
   else:
-   deb+=1
+   deb=mid+1
  return -1
  
  
