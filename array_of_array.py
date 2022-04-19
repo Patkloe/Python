@@ -15,3 +15,4 @@ thislist.remove([0,1,7])
 print(thislist)
 le_type = type(thislist)
 print(le_type) # pour recuperer le type de la variable thislist
+
