@@ -5,6 +5,8 @@ def dis_el():
   nbre = txt.count(txt[i])
   if nbre == 1:
    res.append(txt[i])
- return res
+ return res,set(txt)
 
 print(dis_el())
+#version 0.0.1
+
