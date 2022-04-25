@@ -6,9 +6,9 @@ def rech(arr,x):
   #print(mid)
   if arr[mid]==x:
    return mid
-  elif arr[mid]>x:
+  elif arr[mid]>x:   # always the condition
    fin=mid-1
-  else:
+  else:  # reverse of all other conditions
    deb=mid+1
  return -1
  
