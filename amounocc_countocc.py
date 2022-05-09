@@ -117,3 +117,12 @@ def nbreocc(tab,x):
 tab="VEUT DECOUVRIR"
 x="R"
 print(nbreocc(tab,x))
+# the string given need to be sorted
+def nbreocc(tab,x):
+ #val="".join(tab)
+ if tab.find(x)==tab.rfind(x):
+  return(tab.rfind(x) - tab.find(x))+1
+ return (tab.rfind(x) - tab.find(x))
+tab="VEUT DECOUVRI"  #this need to be sorted to be ok
+x="U"
+print(nbreocc(tab,x))
