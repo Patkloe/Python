@@ -71,3 +71,42 @@ print(amountofocc(tabs,5))
 print(indexfirstocc(tabs,4))
 print(lastindexocc(tabs,4))
 print(amountofocc(tabs,4))
+
+# different version
+
+def firstocc(tab,x):
+ deb=0
+ fin=len(tab)-1
+ while deb<=fin:
+  mid=(deb+fin)//2
+  if tab[mid]<x:
+   deb=mid+1
+  elif tab[mid]>x:
+   fin=mid-1
+  else:
+   if mid==0 or tab[mid]!=tab[mid-1]:
+    return mid
+   else:
+    fin=mid-1
+
+tab=[1,2,2,2,3,4,4,4,5,6,7,8,9]
+x=4
+print(firstocc(tab,x))
+def lastocc(tab,x):
+ deb=0
+ fin=len(tab)-1
+ while deb<=fin:
+  mid=(deb+fin)//2
+  if tab[mid]<x:
+   deb=mid+1
+  elif tab[mid]>x:
+   fin=mid-1
+  else:
+   if mid==mid-1 or tab[mid]!=tab[mid+1]:
+    return mid
+   else:
+    deb=mid+1
+tab=[1,2,2,2,3,4,4,4,5,6,7,8,9]
+x=4
+print(lastocc(tab,x))
+
