@@ -110,3 +110,10 @@ tab=[1,2,2,2,3,4,4,4,5,6,7,8,9]
 x=4
 print(lastocc(tab,x))
 
+#Version with PYTHON predefined functions
+def nbreocc(tab,x):
+ #val="".join(tab)
+ return(tab.rfind(x) - tab.find(x))
+tab="VEUT DECOUVRIR"
+x="R"
+print(nbreocc(tab,x))
