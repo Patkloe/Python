@@ -14,3 +14,12 @@ def search_chain_word():
  return tab
  
 print(search_chain_word())
+
+# search , complexity )(n)
+tab=["voila","c'est","mon","anniversaire"]
+for i in tab:
+ print(i)
+ if i=="mon":
+  print(tab.index(i))
+  break
+  #print(tab.index(i))
