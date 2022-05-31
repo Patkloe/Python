@@ -115,6 +115,42 @@ def mergesort(tab):
 mat=[10,2,3,1,5,7,6,4,9,8,15,12,35,32,30]
 print(mergesort(mat))
 
+# Merge sort another version.
+
+def mergesort(tab):
+ if len(tab)>1:
+  mid=(len(tab))//2
+  left=tab[:mid]
+  right=tab[mid:]
+  mergesort(left)
+  mergesort(right)
+  i=0 #left
+  j=0 #right
+  k=0 #ordered list
+  while i<len(left) and j<len(right):
+   if left[i]<right[j]:
+    tab[k]=left[i]
+    i+=1
+   else:
+    tab[k]=right[j]
+    j+=1
+   k+=1
+  while i<len(left):
+   tab[k]=left[i]
+   i+=1
+   k+=1
+  while j<len(right):
+   tab[k]=right[j]
+   j+=1
+   k+=1
+  return tab
+ else:
+  return tab
+
+tab=[13,14,15,9,7,5,3,6,7,4,2,1,0]
+print(mergesort(tab))
+
+
 
 
 
