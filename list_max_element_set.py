@@ -13,3 +13,20 @@ for i in tab:
  
  
 print(i)
+# version to get the element  with amount higher than the size of array divide by 2
+
+tab=[1,1,2,2,1]
+max=len(tab)/2
+nbre=0
+const=set()
+for i in tab:
+ if i in const:
+  nbre+=1
+  if nbre>max:
+   max=nbre
+   index=i
+ else:
+  const.add(i)
+ 
+ 
+print(i)
