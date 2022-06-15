@@ -12,3 +12,25 @@ def isAnagram(a1,a2):
    return False
  return True
 print(isAnagram("paypal","palpay"))
+
+# other version, without using built fonctions
+
+def anagram(x,y):
+ garde={}
+ if len(x)==len(y):
+  for i in x:
+   if i in garde:
+    garde[i]+=1
+   else:
+    garde[i]=1
+  for j in y:
+   if j in garde and garde[j]>0:
+    garde[j]-=1
+   else: 
+    return False
+  return True
+ else:
+  return False
+  
+print(anagram("vanille","lleniva"))
+    
