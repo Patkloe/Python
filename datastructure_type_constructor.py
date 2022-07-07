@@ -1,7 +1,7 @@
 tst1={1,2,3,4,5}
 tst2=tuple(tst1)
 tst3=list(tst1)
-tst4=dict(zip(tst1,tst1))
+tst4=dict(zip(tst1,tst1))  # define a dictionary where keys and values get the same providerb{tst1)
 typ1=type(tst1)
 typ2=type(tst2)
 typ3=type(tst3)
