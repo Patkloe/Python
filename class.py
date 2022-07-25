@@ -54,3 +54,15 @@ root.insert(14)
 root.insert(3)
 print("Success recording")
 #print(Node(6).right)
+
+
+# to define an objet
+
+class TrieNode:
+ def __init__(self):
+  self.children=[None]*26
+  self.is_end_of_word=False
+  
+decouv=TrieNode()
+print(decouv.children)
+
