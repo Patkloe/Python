@@ -1,0 +1,25 @@
+def verif(val,tab):
+ rech=val+1
+ if rech in tab:
+  return True
+ else:
+  return False
+def check(tab):
+ deb=0
+ fin=len(tab)
+ maxval=max(tab)
+ rep=0
+ res=[]
+ while deb<fin:
+  if verif(tab[deb],tab):
+   rep=0
+  else:
+   val=tab[deb]+1
+   if val<=maxval:
+     res.append(val)
+  deb+=1
+ return res
+ 
+tab=[2,7,5,4,1,0]
+print(check(tab))
+   
