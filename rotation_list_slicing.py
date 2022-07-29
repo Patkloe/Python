@@ -32,6 +32,11 @@ print(tab3)
 
 age = 23
 
+#solution
+
+for i in range(len(tab)):
+ globals()['cab%s' % i]=tab[i:]+tab[:i]   # here it is a variable static
+print(cab1)
 
 globals()['age'] = 25   # here it is a variable static
 print('The age is:', age)
