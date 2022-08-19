@@ -1,0 +1,9 @@
+val=5
+print(isinstance(val,bool))
+print(isinstance(val,str))
+print(isinstance(val,list))
+print(isinstance(val,tuple))
+print(isinstance(val,set))
+print(isinstance(val,dict))
+print(isinstance(val,complex))
+print(isinstance(val,int))
