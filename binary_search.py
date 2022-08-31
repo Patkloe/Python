@@ -64,5 +64,26 @@ print(40, bSearch(l, 40))
 print(55, bSearch(l, 55))
 print(-50, bSearch(l, -50))
 
+def binarysearch(tab,n):
+ if len(tab)>1:
+  left=0
+  right=len(tab)-1
+  while left<=right:
+   mid=(left+right)//2
+   if tab[mid]<n:
+    left=mid+1
+   elif tab[mid]>n:
+    right=mid-1
+   else:
+    return mid 
+  return -1
+ else:
+  return -1
+  
+  
+tab=[0,1,2,3,4,5,6,7,8,9]
+print(binarysearch(tab,-2))
+  
+
 
   
