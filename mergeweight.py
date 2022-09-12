@@ -22,4 +22,40 @@ def mergeweight(tab,s):
  
 tab=[5,6,9,8,7,1,2,3,4]
 print(mergeweight(tab,9))
-   
+  
+# other version
+def compare(a,b):
+ if a<b:
+  return True
+ else:
+  return False
+
+def Evalue(tab):
+ res=[]
+ val=0
+ i=0
+ '''while i<n:
+  j=i+1
+  if j<len(tab) and compare(tab[i],tab[j]):
+   #nbre+=1
+   val=tab[i]+tab[i+1]
+   tab.remove(tab[i+1])
+   tab[i]=val
+   #i=0
+   print(tab)
+   print(len(tab))
+   Evalue(tab,len(tab))
+  #elif j<len(tab) and not compare(tab[i],tab[i+1]):
+  i+=1'''
+ for i in range(len(tab)):
+   j=i+1
+   if j<len(tab) and compare(tab[i],tab[j]):
+    val=tab[i]+tab[i+1]
+    tab.remove(tab[i+1])
+    tab[i]=val
+    print(tab)
+    Evalue(tab)
+ return max(tab)
+ 
+tab=[4,2,9,10,3,7]
+print(Evalue(tab))
