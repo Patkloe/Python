@@ -12,7 +12,7 @@ def mergeweight(tab,s):
   j=i+1
   if (j<len(tab) and compare(tab[i],tab[j])):
    val=tab[i]+tab[j]
-   tab.remove(tab[j])
+   tab.remove(tab[j]) #wrong
    tab[i]=val
    print(tab)
    m=len(tab)
@@ -51,7 +51,7 @@ def Evalue(tab):
    j=i+1
    if j<len(tab) and compare(tab[i],tab[j]):
     val=tab[i]+tab[i+1]
-    tab.remove(tab[i+1])
+    tab.remove(tab[i+1]) #wrong
     tab[i]=val
     print(tab)
     Evalue(tab)
@@ -86,6 +86,7 @@ def mergeweight(tab):
    if j<len(tab) and compare(tab[i],tab[i+1]):
     val=tab[i]+tab[i+1]
     tab.pop(i+1)
+    #del(tab[i+1])
     tab[i]=val
     print(len(tab))
     print(tab)
