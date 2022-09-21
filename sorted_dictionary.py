@@ -36,4 +36,26 @@ def feedback(logs):
 
 logs=["5 3 2","9 7 5","7 8 5","6 5 7","2 4 3","8 6 5","7 6 5","2 3 7","6 5 8","4 5 9"]
 print(feedback(logs))
+
+# other version
+
+def feedback(logs):
+ recup=[]
+ res={}
+ for i in logs:
+  #recup.append(i)
+ #for x in recup:
+  temp=i.split(" ")
+  print(temp)
+  for i in range(len(temp)-1):
+   if temp[i] in res:
+    res[temp[i]]+=1
+   else: 
+    res[temp[i]]=1
+  final=sorted(res.items(),key=lambda a:a[i],reverse=True)
+ return final
+
+logs=["5 3 2","9 7 5","7 8 5","6 5 7","2 4 3","8 6 5","7 6 5","2 3 7","6 5 8","4 5 9"]
+print(feedback(logs))
+ 
  
