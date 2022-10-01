@@ -12,6 +12,11 @@ sub = 'abc'
 test=[sub in mystring for mystring in mylist]
 print(test)
 
+mylist = ['abc123', 'def456', 'ghi789']
+sub=set('abc')
+test=[let for let  in mylist if 'abc' in let]
+print(test)
+
 test2=[string for string in mylist if string=="ab"]
 print(test2)
 test3=[string for string in mylist if sub in string]
