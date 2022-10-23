@@ -1,3 +1,50 @@
+# implement a linked list python
+class Node:
+ def __init__(self,data):
+  self.data=data
+  self.next=None
+ def __repr__(self):
+  return self.data
+class Linkedlist:
+ def __init__(self):
+  self.head=None
+ def __repr__(self):
+  node=self.head
+  nodes=[]
+  while node is not None:
+   nodes.append(node.data)
+   node=node.next
+  #nodes.append("None")
+  return "->".join(nodes)
+ def addnode(self,val):
+  ins=Node(val)
+  if self.head==None:
+   self.head=ins
+  else:
+   temp=self.head
+   while temp.next!=None:
+    temp=temp.next
+   temp.next=ins
+tab=["A","B","C","D","E","F","G","H"]
+test=Linkedlist()
+for i in range(len(tab)):
+ test.addnode(tab[i])
+print(test)
+ 
+#test=Node("A")
+#print(test)
+  
+
+
+
+
+
+
+
+
+
+
+
 class Node:
     def __init__(self, data):
         self.data = data
