@@ -25,14 +25,33 @@ class Linkedlist:
    while temp.next!=None:
     temp=temp.next
    temp.next=ins
+ def addpos(self,val,pos):
+  ins=Node(val)
+  if pos==0:
+   print("insert at least in position 1")
+  elif pos==1:
+   #ins=Node(val)
+   ins.next=self.head
+   self.head=ins
+  else:
+   temp=self.head
+   for i in range(1,pos-1):
+    if temp!=None:
+     temp=temp.next
+   if temp!=None:
+    ins.next=temp.next
+    temp.next=ins
+   else:
+    print("empty")
+  
+    
+   
 tab=["A","B","C","D","E","F","G","H"]
 test=Linkedlist()
 for i in range(len(tab)):
  test.addnode(tab[i])
+test.addpos("V",0)
 print(test)
- 
-#test=Node("A")
-#print(test)
   
 
 
