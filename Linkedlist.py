@@ -1,3 +1,89 @@
+#linkedlist python, add / delete a Node to a position
+
+class Node:
+ def __init__(self,data):
+  self.data=data
+  self.next=None
+ def __repr__(self):
+  return self.data
+class Linkedlist:
+ def __init__(self):
+  self.head=None
+ def __repr__(self):
+  node=self.head
+  nodes=[]
+  while node is not None:
+   nodes.append(node.data)
+   node=node.next
+  nodes.append("None")
+  return "->".join(nodes)
+ def addnode(self,val):
+  newnode=Node(val)
+  if self.head is None:
+   newnode.next=self.head
+   self.head=newnode
+  else:
+   temp=self.head
+   while temp.next is not None:
+    temp=temp.next
+   temp.next=newnode
+ def addpos(self,val,pos):
+  newnode=Node(val)
+  if pos<1:
+   print("should start at 1")
+  elif pos==1:
+   temp=self.head
+   newnode.next=self.head
+   self.head=newnode
+  else:
+   temp=self.head
+   for j in range(1,pos-1):
+    if temp is not None:
+     temp=temp.next
+   if temp is not None:
+    newnode.next=temp.next
+    temp.next=newnode
+ def delete(self,key):
+  temp=self.head
+  if temp is not None:
+   if temp.data==key:
+    self.head=temp.next
+    temp=None
+  while temp is not None:
+   if temp.data==key:
+    break
+   prev=temp
+   temp=temp.next
+  if temp is None:
+   return #print("Not find")
+  prev.next=temp.next
+  temp=None
+ 
+tab=["A","B","C","D","E","F","G","H","J","H","I","J","K","L","M"] 
+test=Linkedlist()
+for j in tab:
+ test.addnode(j)
+ 
+test.addpos("Z",5)
+test.delete("W")
+print(test)
+'''firstnode=Node("A")
+secondnode=Node("B")
+thirdnode=Node("C")
+firstnode.next=secondnode
+secondnode.next=thirdnode
+test=Linkedlist()
+test.head=firstnode
+print(test)'''
+
+
+
+
+
+
+
+
+
 # implement a linked list python
 class Node:
  def __init__(self,data):
