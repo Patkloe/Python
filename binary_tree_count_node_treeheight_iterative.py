@@ -94,3 +94,36 @@ tab=[2,3,4,7,9,6,5,1,8]
 for j in tab:
  test.insert(j)
 print(nbrenode(test))
+
+#### Binary Tree Datastructure ########
+class NodeTree:
+ def __init__(self,data):
+  self.data=data
+  self.left=None
+  self.right=None
+  
+ def insert(self,val):
+  if self.data:
+   if self.data>val:
+    #left
+    if self.left is None:
+     self.left=NodeTree(val)
+     print(self.left.data)
+     print("left")
+    else:
+     self.left.insert(val)
+   else: # self.data<val:
+    #right
+    if self.right is None:
+     self.right=NodeTree(val)
+     print("right")
+     print(self.right.data)
+    else:
+     self.right.insert(val)
+  else:
+   self.data=val
+   
+tab=[1,2,7,8,0,5,6,3,4,9]
+test=NodeTree(0)
+for j in tab:
+ test.insert(j)
