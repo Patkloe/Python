@@ -16,7 +16,7 @@ class Nodetree:
     else:
      self.right.insert(val)
   else:
-   self.data=data
+   self.data=val
 def nbrenode(node):
  queue=[]
  count=0
