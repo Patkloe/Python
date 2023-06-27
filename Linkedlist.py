@@ -4,7 +4,7 @@ class Node:
  def __init__(self,data):
   self.data=data
   self.next=None
- def __repr__(self):
+ def __repr__(self):  # returns a string as the representation of the object
   return self.data
 class Linkedlist:
  def __init__(self):
