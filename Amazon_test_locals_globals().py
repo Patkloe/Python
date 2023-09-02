@@ -20,4 +20,16 @@ def max_sum(a,n):
    sum=cal
  return sum
  #print(sum)
+a = 5
+print(locals()['c'])    # keyerror c is not in the global scope
+def func():
+    c = 10
+    d = c + a
+     
+    # Calling globals()
+    locals()['a'] = d
+    print (d)
+     
+# Driver Code   
+func()
  
