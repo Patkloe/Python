@@ -1,7 +1,7 @@
 #User function Template for python3
 def compte(tab):
  sum1=0
- for i in range(len(tab)):
+ for i in range(len(tab)): 
   sum1=sum1+(tab[i]*i)
  #print(sum1)
  return sum1
