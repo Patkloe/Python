@@ -27,7 +27,7 @@ class Linkedlist:
    while temp.next is not None:
     temp=temp.next
    temp.next=newnode
- def addpos(self,val,pos):
+ def addpos(self,val,pos): # add a node to a specific position
   newnode=Node(val)
   if pos<1:
    print("should start at 1")
