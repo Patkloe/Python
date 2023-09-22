@@ -28,3 +28,11 @@ test.remove(test[0])
 print(test)
 v=len(test)
 print(v)
+
+# another sample
+recup=[]
+val=[["this","is", "a","test"],["a","decouvrir"]]
+
+for i in val:
+ recup.append("".join(i))
+print(recup)
