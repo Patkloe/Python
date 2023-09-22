@@ -15,4 +15,15 @@ thislist.remove([0,1,7])
 print(thislist)
 le_type = type(thislist)
 print(le_type) # pour recuperer le type de la variable thislist
+#sample 2
+tab=[1,2,3,4]
+tab2=[6,7,8]
+test=[]
+test.append(tab)
+test.append(tab2)
+print(test)
+print(test[0][1])
+print(test[0][3])
+test.remove(test[0])
+print(test)
 
