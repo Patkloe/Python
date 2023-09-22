@@ -26,4 +26,5 @@ print(test[0][1])
 print(test[0][3])
 test.remove(test[0])
 print(test)
-
+v=len(test)
+print(v)
