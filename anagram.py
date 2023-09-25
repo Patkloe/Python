@@ -33,4 +33,23 @@ def anagram(x,y):
   return False
   
 print(anagram("vanille","lleniva"))
+
+# another version 
+def anagram():
+ tab1=[]
+ tab2=[]
+ mot1="pepa"
+ mot2="apap"
+ for i in mot1:
+  tab1.append(mot1.count(i))
+ for j in mot2:
+  tab2.append(mot2.count(j))
+ print(tab1)
+ print(tab2)
+ if tab1==tab2:
+  return True
+ else:
+  return False
+val=anagram()
+print(val)
     
