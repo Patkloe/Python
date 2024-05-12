@@ -20,5 +20,5 @@ disp(num,k):
  res=[]
  trans= str(total)
 for i in trsns:
-  res.append(i)
+  res.append(int(i))
 return res
