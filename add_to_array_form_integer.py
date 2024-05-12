@@ -14,3 +14,11 @@ def addToArrayForm(num, k):
 num = [2,1,5]
 k = 806
 print(addToArrayForm(num, k))
+# simple version :
+disp(num,k):
+ total= num+ k
+ res=[]
+ trans= str(total)
+for i in trsns:
+  res.append(i)
+return res
