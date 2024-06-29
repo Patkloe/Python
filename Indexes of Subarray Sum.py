@@ -4,7 +4,7 @@ def searchsum(arr,sum):
  for i in range(len(arr)):
   temp=temp+str(arr[i])
   print(temp)
-  if len(temp)==2:
+  if len(temp)==2:  # conditions base off two positions in the array
    if int(temp[0])+int(temp[1])==sum:
     res.append(arr.index(int(temp[0])))
     res.append(arr.index(int(temp[1])))
