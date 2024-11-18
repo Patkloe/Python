@@ -9,4 +9,16 @@ for i in tab:
 print(res)
 tp=(1,2)
 print(len(tp))
- 
+ tab=["tre","yui","opi","cdf","rty","mkl","klo"]
+res=[]
+temp=[]
+for i in range(len(tab)):
+ for j in range(i+1,len(tab)):
+  temp.append(tab[i])
+  temp.append(tab[j])
+  if len(temp)==2:
+   nouv=tuple(temp)
+   res.append(nouv)
+   temp=[]
+print(res)
+
